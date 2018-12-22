@@ -85,7 +85,7 @@ update msg model =
 
         UrlChanged url ->
             case url.path of
-                "/test" ->
+                "/users" ->
                     ( { model | url = url, route = parseLocation url, count = model.count + 1 }
                     , getUser
                     )
